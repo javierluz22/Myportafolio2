@@ -1,0 +1,16 @@
+body { margin: 0; font-family: Inter, sans-serif; background: #f4f6f8; color: #333; }
+header { position: sticky; top: 0; background: #a8dadc; display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 2px solid #457b9d; }
+header a { color: #1d3557; text-decoration: none; margin: 0 10px; font-weight: 600; }
+header a:hover { text-decoration: underline; }
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+h1, h2 { color: #1d3557; }
+.card { background: #fff; padding: 20px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
+.skills span { background: #ffddd2; padding: 6px 12px; border-radius: 999px; color: #6d6875; display: inline-block; margin: 4px 6px 0 0; font-size: 0.9rem; }
+.profile-pic { display: block; max-width: 180px; border-radius: 50%; margin: 0 auto 20px auto; border: 4px solid #a8dadc; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.profile-header { text-align: center; margin-bottom: 20px; }
+footer { text-align: center; padding: 15px; border-top: 1px solid #ccc; margin-top: 20px; color: #6d6875; }
+form { display: grid; gap: 12px; }
+input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 12px; font-size: 1rem; }
+input:focus, textarea:focus { outline: none; border-color: #457b9d; box-shadow: 0 0 0 2px rgba(69, 123, 157, 0.3); }
+button { padding: 12px; border: none; border-radius: 12px; background: #457b9d; color: #fff; font-size: 1rem; cursor: pointer; }
+button:hover { background: #1d3557; }
