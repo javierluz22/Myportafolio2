@@ -1,5 +1,5 @@
 body { margin: 0; font-family: Inter, sans-serif; background: #f4f6f8; color: #333; }
-header { position: sticky; top: 0; background: #a8dadc; display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 2px solid #457b9d; }
+header { position: sticky; top: 0; background: #a8dadc; display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 2px solid #457b9d; z-index: 10; }
 header a { color: #1d3557; text-decoration: none; margin: 0 10px; font-weight: 600; }
 header a:hover { text-decoration: underline; }
 .container { max-width: 1100px; margin: auto; padding: 20px; }
@@ -15,17 +15,30 @@ button { padding: 12px; border: none; border-radius: 12px; background: #457b9d; 
 button:hover { background: #1d3557; }
 
 /* Galería carrusel */
-.carousel { position: relative; overflow: hidden; border-radius: 20px; border: 2px solid #a8dadc; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 320px; }
-.carousel-track { display: flex; width: calc(100% * 4); animation: slide 16s infinite linear; }
-.carousel img { width: 100%; flex: 1 0 100%; object-fit: cover; }
+.carousel { position: relative; overflow: hidden; border-radius: 20px; border: 2px solid #a8dadc; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 400px; }
+.carousel-track { display: flex; width: calc(100% * 10); /* Ajustado para 10 imágenes */ animation: slide 40s infinite linear; }
+.carousel img { width: 100%; flex-shrink: 0; object-fit: cover; }
+
 @keyframes slide {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(0); }
-  25% { transform: translateX(-100%); }
-  45% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  70% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  95% { transform: translateX(-300%); }
-  100% { transform: translateX(0); }
+  0% { transform: translateX(calc(-100% * 0)); }
+  9% { transform: translateX(calc(-100% * 0)); }
+  10% { transform: translateX(calc(-100% * 1)); }
+  19% { transform: translateX(calc(-100% * 1)); }
+  20% { transform: translateX(calc(-100% * 2)); }
+  29% { transform: translateX(calc(-100% * 2)); }
+  30% { transform: translateX(calc(-100% * 3)); }
+  39% { transform: translateX(calc(-100% * 3)); }
+  40% { transform: translateX(calc(-100% * 4)); }
+  49% { transform: translateX(calc(-100% * 4)); }
+  50% { transform: translateX(calc(-100% * 5)); }
+  59% { transform: translateX(calc(-100% * 5)); }
+  60% { transform: translateX(calc(-100% * 6)); }
+  69% { transform: translateX(calc(-100% * 6)); }
+  70% { transform: translateX(calc(-100% * 7)); }
+  79% { transform: translateX(calc(-100% * 7)); }
+  80% { transform: translateX(calc(-100% * 8)); }
+  89% { transform: translateX(calc(-100% * 8)); }
+  90% { transform: translateX(calc(-100% * 9)); }
+  99% { transform: translateX(calc(-100% * 9)); }
+  100% { transform: translateX(calc(-100% * 0)); }
 }
