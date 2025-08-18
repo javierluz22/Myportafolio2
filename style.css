@@ -1,0 +1,18 @@
+body { margin: 0; font-family: Inter, sans-serif; background: #f4f6f8; color: #333; }
+header { position: sticky; top: 0; background: #a8dadc; display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 2px solid #457b9d; z-index: 10; }
+header a { color: #1d3557; text-decoration: none; margin: 0 10px; font-weight: 600; }
+header a:hover { text-decoration: underline; }
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+h1, h2 { color: #1d3557; }
+.card { background: #fff; padding: 20px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
+footer { text-align: center; padding: 15px; border-top: 1px solid #ccc; margin-top: 20px; color: #6d6875; }
+
+/* Carrusel */
+.carousel { position: relative; overflow: hidden; border-radius: 20px; border: 2px solid #a8dadc; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 400px; }
+.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel img { width: 100%; height: 400px; object-fit: contain; flex-shrink: 0; }
+
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; padding: 10px; cursor: pointer; border-radius: 50%; }
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+.carousel-btn:hover { background: rgba(0,0,0,0.8); }

@@ -3,63 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <title>Portafolio Javier Luzardo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">Mi Portafolio</div>
+    <h1>Mi Portafolio</h1>
     <nav>
-      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#inicio">Inicio</a>
       <a href="#experiencia">Experiencia</a>
+      <a href="#galeria">Galería</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <div class="container">
-    <h1 id="experiencia">Galería de Trabajos</h1>
-    <div class="carousel">
-      <div class="carousel-track">
-        <img src="img/img1.jpg" alt="Trabajo 1">
-        <img src="img/img2.jpg" alt="Trabajo 2">
-        <img src="img/img3.jpg" alt="Trabajo 3">
-        <img src="img/img4.jpg" alt="Trabajo 4">
-        <img src="img/img5.jpg" alt="Trabajo 5">
-        <img src="img/img6.jpg" alt="Trabajo 6">
-        <img src="img/img7.jpg" alt="Trabajo 7">
-        <img src="img/img8.jpg" alt="Trabajo 8">
-        <img src="img/img9.jpg" alt="Trabajo 9">
-        <img src="img/img10.jpg" alt="Trabajo 10">
-        <img src="img/img11.jpg" alt="Trabajo 11">
-        <img src="img/img12.jpg" alt="Trabajo 12">
-        <img src="img/img13.jpg" alt="Trabajo 13">
-      </div>
-      <button class="carousel-btn prev">&#10094;</button>
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
+  <main class="container">
+    <section id="inicio" class="card">
+      <h2>Inicio</h2>
+      <p>Bienvenido a mi portafolio profesional.</p>
+    </section>
 
-    <h2 id="galeria">Galería completa</h2>
-    <div class="gallery">
-      <img src="img/img1.jpg" alt="Trabajo 1">
-      <img src="img/img2.jpg" alt="Trabajo 2">
-      <img src="img/img3.jpg" alt="Trabajo 3">
-      <img src="img/img4.jpg" alt="Trabajo 4">
-      <img src="img/img5.jpg" alt="Trabajo 5">
-      <img src="img/img6.jpg" alt="Trabajo 6">
-      <img src="img/img7.jpg" alt="Trabajo 7">
-      <img src="img/img8.jpg" alt="Trabajo 8">
-      <img src="img/img9.jpg" alt="Trabajo 9">
-      <img src="img/img10.jpg" alt="Trabajo 10">
-      <img src="img/img11.jpg" alt="Trabajo 11">
-      <img src="img/img12.jpg" alt="Trabajo 12">
-      <img src="img/img13.jpg" alt="Trabajo 13">
-    </div>
-  </div>
+    <section id="experiencia" class="card">
+      <h2>Experiencia</h2>
+      <p>Aquí se detalla mi experiencia laboral.</p>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="card">
+      <h2>Galería de Proyectos</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="images/img1.jpg" alt="Proyecto 1">
+          <img src="images/img2.jpg" alt="Proyecto 2">
+          <img src="images/img3.jpg" alt="Proyecto 3">
+          <img src="images/img4.jpg" alt="Proyecto 4">
+          <img src="images/img5.jpg" alt="Proyecto 5">
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p>Formulario de contacto.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Mi Portafolio</p>
+    <p>&copy; 2025 Javier Luzardo</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
